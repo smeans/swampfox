@@ -1,0 +1,72 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>First In Line - Swampfox Inc.</title>
+  <meta name="description" content="">
+
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/grid.css?v=1.0">
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+
+  <script src="js/jquery-1.11.2.min.js"></script>
+  <script src="js/main.js"></script>
+
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <div class="header">
+    <img src="images/logo.gif"/>
+    <h1>First in Line - <span id="install_name">PROD-MLT</span></h1>
+  </div>
+  <div class="section group">
+    <div class="sidebar col span_1_of_5">
+      &nbsp;
+    </div>
+    <div class="main col span_4_of_5">
+      <div class="servers">
+        <h2>First in Line Servers</h2>
+        <div class="server_list selectable">
+          <div class="server">
+            <img src="images/server_sm.png"/><br/>
+            <span class="status up" title="running">&nbsp;</span><h3>mltplapv07</h3>
+          </div>
+          <div class="server">
+            <img src="images/server_sm.png"/><br/>
+            <span class="status down" title="suspended">&nbsp;</span><h3>spoplapv07</h3>
+          </div>
+        </div>
+      </div>
+      <div class="server_detail">
+        <div class="server_summary">
+        </div>
+        <div class="queues">
+          <div class="queue template">
+            <div class="qs">
+              <h4><span class="status {state}" title="{state}">&nbsp;</span>{name}</h4>
+              <div class="qs_tray">
+                <div style="width: 30%">
+                  <div class="ewt fa fa-clock-o ewt_warn" title="estimated wait time" style="width: 80%">{ewt_avg}s</div>
+                </div>
+                <div style="width: 40%">
+                  <span class="fa fa-user">{agents_logged_in_avg}</span>&nbsp;<span class="fa fa-gear">&nbsp;</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+  </div>
+  <div class="data_feeds">
+    <iframe src="ajax?table=queue_summary_view" id="if_queues"></iframe>
+  </div>
+</body>
+</html>

@@ -1,0 +1,7 @@
+<Context>
+<Resource name="jdbc/fil" auth="Container"
+          type="javax.sql.DataSource" driverClassName="org.postgresql.Driver"
+          url="jdbc:postgresql://127.0.0.1:5432/fil_lab"
+          username="fil_web" password="swampfox" maxActive="20" maxIdle="10"
+          maxWait="-1"/>
+</Context>

@@ -1,0 +1,130 @@
+body {
+  background-color: #BEBEA0;
+  border-color: #961E28;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Open Sans', sans-serif;
+  margin: 5pt 3pt 0pt 3pt;
+  padding-bottom: 0pt;
+}
+
+.header * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.header h1 {
+  padding: 5px 20px;
+
+  border-radius: 5px;
+  background-color: #fff;
+  border-width: 2px;
+  font-weight: bold;
+}
+
+.sidebar {
+  border-radius: 5px;
+  background-color: #F0F0D2;
+  border-width: 2px;
+}
+
+.main {
+  background-color: #fff;
+  border-radius: 5px;
+  border-width: 2px;
+}
+
+.servers, .server_detail {
+  background-color: #BEBEA0;
+  border-radius: 5px;
+  border-width: 2px;
+  margin: 3em;
+}
+
+.servers h2 {
+  color: #fff;
+}
+
+.server {
+  background-color: #fff;
+  width: 140px;
+  display: inline-block;
+
+  text-align: center;
+
+  border-radius: 5px;
+  border-width: 2px;
+}
+
+.server_list * {
+  display: inline-block;
+  margin: 3pt;
+}
+
+.status {
+  width: 16px;
+  height: 16px;
+  border-radius: 8px;
+  border-width: 2px;
+  display: inline-block;
+  padding: 0px;
+  margin: 0px;
+  cursor: default;
+}
+
+.status img {
+  height: 8px;
+  width: 8px;
+}
+.up,.OFFERING {
+  background-color: #0f0;
+}
+
+.down,.STOPPED {
+  background-color: #ccc;
+}
+
+.selected {
+  border: 3px solid #ffd700;
+}
+
+.queues {
+
+}
+
+.queue {
+
+}
+
+.qs {
+  padding: 5px;
+  min-width: 120px;
+  width: 30%;
+}
+
+.qs>* {
+  width: 100%;
+}
+
+.qs_tray * {
+  display: inline-block;
+}
+
+.ewt {
+  width: 100%;
+  background-color: #f0f;
+}
+
+.ewt_good {
+  background-color: #0f0;
+}
+
+.ewt_warn {
+  background-color: orange;
+}
+
+/* comment out for debugging */
+.data_feeds,.template {
+  display: none;
+}
